@@ -1,0 +1,84 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-family: 微软雅黑;
+}
+
+#title{ 
+	height: 900px;
+    background-image: url("qian.jpg");
+    padding-top: 100px;
+    padding-left: 180px;
+}
+#name{
+	font-size: 70px;
+	color: #ffcce7;
+}
+#bu{
+	font-size: 30px;
+	color:white;
+}
+#me{
+	margin: 5px;
+	width: 400px;
+	height: 50px;
+}
+li{
+	font-size: 20px;
+	color: yellow;
+	float: left;
+	margin-top: 20px;
+	margin-right: 30px;
+}
+p{
+	font-size: 25px;
+	width: 750px;
+	padding-left: 2em;
+	padding-right: 2em;
+	line-height: 2em;
+	background-color: rgba(246,251,254,0.5);
+}
+#prod{
+	float: left;
+}
+.on{
+	padding-bottom: 1em;
+}
+#first{
+	padding-top: 1em;
+	margin-top: 2em;
+}
+#end{
+	font-size: 30px;
+	color: #f03999;
+	float: right;
+}
+#foot{
+	height: 250px;
+	background-color: #07434b;
+}
+#e{
+	height: 25px;
+	padding-top: 130px;
+	padding-left: 300px;
+}
+#e1{
+	font-size: 20px;
+	background-color: rgba(246,251,254,0.5);
+	padding: 5px;
+}
+#e2{
+	font-size: 20px;
+}
+#imfor{
+	width: 160px;
+	font-size: 20px;
+	background-color: rgba(246,251,254,0.5);
+	padding: 10px;
+	line-height: 35px;
+	position: absolute;
+	right:70px;	
+	bottom: -225px;
+}
+
