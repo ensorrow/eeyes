@@ -1,0 +1,450 @@
+header,nav,aside,article,footer,body{
+	box-sizing: border-box;
+	width: 1280px;
+	font-family: "微软雅黑";
+}
+html{
+	background-color: #eee;
+}
+body{
+	margin: 5px auto 10px;
+	box-shadow: 2px 2px 15px #535353;
+}
+button{
+	cursor: pointer;
+}
+.mid{
+	display: inline-block;
+}
+/*默认项清零，统一格式设置等*/
+header{
+	height: 83px;
+	background-color: #63a02d;
+	padding: 0px 134px 0px 152px;
+	position: relative;
+	font-size: 14px;
+}
+header img[src="logo.png"]{
+	padding: 10px 40px 0px 0px;
+} 
+header #navi{
+	display: inline-block;
+	list-style: none;
+	margin: 32px 0px;
+	padding: 0;
+	vertical-align: top;
+}
+header #navi li{
+	float: left;
+	margin: 0px 6px;
+}
+header #navi li a{
+	padding: 2px 10px;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+}
+header #navi #check{
+	background-color: #360;
+}
+header #navi li a:hover{
+	background-color: #360;
+}
+header #navi li:nth-child(3){
+	position: relative;
+}
+header #navi li:nth-child(3):hover ul{
+	display: inline-block;
+}
+header #navi ul{
+	display: none;
+	position: absolute;
+	top: 22px;
+	padding: 0;
+	background-color: rgba(143,195,31,0.5);
+	border-radius: 5px;
+	list-style: none;
+	width: 236px;
+	line-height: 1.8;
+}
+header #navi ul li{
+	display: inline;
+	color: #fff;
+	margin: 0;
+}
+header #navi ul li:hover{
+	display: inline-block;
+}
+header #navi ul li:hover a{
+	background-color: rgba(143,195,31,0.5);
+	color: #000;
+}
+header #navi ul li~li:before{
+	content: "|";
+}
+header #navi ul a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 14px;
+}
+header span{
+	float: right;
+	background-color: #386a05;
+	border-radius: 5px;
+	margin-top: 24px;
+	height: 30px;
+	padding: 8px 4px 0px;
+}
+header span a{
+	margin: 0px 8px;
+}
+header img[src="header_right.jpg"]{
+	position: absolute;
+	top: 0; right: 0;
+}
+/*未解决的问题：鼠标移上下拉框时，上面导航栏的背景色不见了*/
+/*header设置*/
+nav{
+	background-image: url(banner_bg.jpg);
+	height: 480px;
+	padding: 0px 134px 0px 152px;
+	font-size: 14px;
+}
+nav>span{
+	display: inline-block;
+	background-color: #31aba8;
+	margin: 8px 10px 10px 0px;
+	color: #fff;
+	padding: 1px 12px;
+	cursor: default;
+}
+#dot{
+	display: inline-block;
+	height: 8px;
+	width: 8px;
+	border-radius: 50%;
+	background: #fff;
+	margin-right: 6px;
+	box-shadow: 0 0 14px #fff;
+}
+nav>a{
+	text-decoration: none;
+	color: #000;
+}
+nav div{
+	height: 384px;
+	width: 100%;
+	background-image: url(banner_bgm.jpg);
+	background-size: 100%;
+	text-align: center;
+}
+nav div a{
+	display: inline-block;
+	margin-top: 22px;
+}
+nav ul{
+	margin: 14px auto;
+	list-style: none;
+	width: 124px;
+	padding: 0;
+}
+nav ul li{
+	float: left;	
+	margin: 0px 5px;
+}
+nav ul li button{
+	width: 14px;
+	height: 14px;
+	background-color: #fff;
+	border: none;
+	border-radius: 50%;
+	outline: none;
+}
+nav ul li:nth-child(3) button{
+	background-color: #63a02d;
+}
+aside{
+	height: 262px;
+	background-color: #63a02d;
+	padding: 0px 138px 0px 154px;
+}
+aside button{
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0;
+	margin: 20px;
+}
+#left{
+	cursor: pointer;
+	line-height: 0;
+}
+#right{
+	line-height: 0;
+	float: right;
+	transform:rotate(180deg);  /*火狐浏览器*/
+	-webkit-transform:rotate(180deg);  /*360浏览器*/
+	cursor: pointer;
+}
+aside ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+aside ul li{
+	float: left;
+	margin: 0px 12px;
+	text-align: center;
+}
+aside ul li img{
+	border: 6px solid #fff;
+}
+aside ul li p{
+	margin: 6px 0px;
+}
+aside ul li p a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+}
+/*aside设置*/
+article{
+	height: 922px;
+	background-color: #e5e5e5;
+	text-align: center;
+}
+article .mid{
+	padding-top: 4px;
+}
+article .more{
+	float: right;
+	color: #fff;
+	font-size: 14px;
+}
+article .title div:nth-child(1){
+	background-color: #6a8e44;
+	color: #fff;
+	font-size: 16px;
+	width: 124px;
+	line-height: 38px;
+}
+article .title{
+	position: relative;
+}
+article .title div:nth-child(2){
+	background-color: #8bb863;
+	color: #fff;
+	font-size: 12px;
+	line-height: 38px;
+	padding: 0px 12px;
+	text-align: left;
+	position: absolute;
+	top: 0; right: 0;
+}
+article .content{
+	text-align: left;
+	margin: 0;
+	margin-top: 18px;
+}
+article a{
+	color: #000;
+	text-decoration: none;
+}
+/*article统一设置*/
+article #left-part{
+	float: left;
+	width: 594px;
+	margin-right: 20px;
+}
+article #left-part .title div:nth-child(2){
+	width: 436px;
+}
+article #left-part #top:after{
+	content: url(shadow2.jpg);
+	vertical-align: -10px;
+}
+article #left-part #bottom:after{
+	content: url(shadow2.jpg);
+	vertical-align: -4px;
+}
+/*左侧栏统一设置*/
+article #left-part #top{
+	background-color: #fff;
+	height: 440px;
+
+}
+article #left-part #top .content{
+	font-size: 12px;
+	line-height: 1.5;
+	padding-right: 20px;
+}
+article #left-part #top .content a{
+	font-weight: bold;
+}
+article #left-part #top .content span{
+	margin-left: 2em; 
+}
+article #left-part #bottom{
+	background-color: #fff;
+	margin-top: 30px;
+	height: 402px;
+}
+article #left-part #bottom .content{
+	list-style: none;
+	margin-left: 10px;
+	padding: 0;
+}
+article #left-part #bottom .content li{
+	padding-left: 6px;
+	margin-bottom: 20px;
+}
+article #left-part #bottom .content span{
+	display: inline-block;
+	width: 304px;
+	margin-left: 14px;
+	vertical-align: top;
+}
+article #left-part #bottom .content span h1{
+	font-size: 14px;
+	margin: 0;
+}
+article #left-part #bottom .content span p{
+	font-size: 12px;
+	margin: 0;
+}
+article #left-part #bottom .content span p span{
+	line-height: 1.8;
+}
+article #left-part #bottom .content li:nth-child(2){
+	padding-top: 12px;
+	border-top: 1px solid #c9c9c9;
+	width: 560px;
+}
+/*左侧栏单一设置*/
+article #right-part{
+	float: right;
+	width: 378px;
+}
+article #right-part .title div:nth-child(2){
+	width: 220px;
+}
+article #right-part #one:after{
+	content: url(shadow1.jpg);
+	vertical-align: -10px;
+}
+article #right-part #three:after{
+	content: url(shadow1.jpg);
+}
+/*右侧栏统一设置*/
+article #right-part #one{
+	background-color: #fff;
+	height: 200px;
+}
+article #right-part #one .content{
+	font-size: 12px;
+	padding: 0px 14px;
+	list-style: none;
+}
+article #right-part #two{
+	margin: 12px 0px;
+}
+article #right-part #three{
+	background-color: #fff;
+	height: 418px;
+}
+article #right-part #three .content{
+	list-style: none;
+	width: 274px;
+	padding-left: 12px;
+}
+article #right-part #three .content li~li{
+	margin-top: 18px;
+}
+article #right-part #three .content h1{
+	font-size: 14px;
+	margin: 0;
+}
+article #right-part #three .content p{
+	font-size: 12px;
+	margin: 0;
+}
+article #right-part #three .content p span{
+	line-height: 1.8;
+}
+/*右侧栏单一设置*/
+/*未解决的问题：框下的阴影位置不对*/
+/*article设置*/
+footer{
+	height: 253px;
+	background-color: #393f48;
+	padding-left: 150px;
+	color: #acadae;
+}
+footer a{
+	color: #acadae;
+	text-decoration: none;
+	font-size: 10px;
+}
+footer div{
+	width: 576px;
+	float: left;
+	margin-top: 34px;
+}
+footer div p:first-child{
+	margin: 0;
+	width: 178px;
+	border-bottom: 1px dotted #acadae;
+	line-height: 1.8;
+	font-size: 14px;
+}
+footer div p:last-child{
+	font-size: 10px;
+	margin-top: 6px;
+}
+footer>span{
+	float: right;
+	width: 512px;
+	background-color: #434a54;
+	height: 227px;
+	padding-top: 26px;
+}
+footer>span p{
+	margin: 0;
+}
+footer #link1{
+	display: inline-block;
+	width: 132px;
+	margin-left: 20px;
+}
+footer #link1 p{
+	font-size: 12px;
+	padding-bottom: 8px;
+	border-bottom: 1px dotted #acadae;
+}
+footer #link1 ul{
+	margin-top: 10px;
+}
+footer #link2{
+	display: inline-block;
+	width: 114px;
+	margin-right: 186px;
+	float: right;
+}
+footer #link2 li:first-child{
+	font-size: 12px;
+	padding-bottom: 8px;
+	border-bottom: 1px dotted #acadae;
+}
+footer #link2 li:nth-child(2){
+	margin-top:6px; 
+}
+footer #link2 li~li{
+	line-height: 1.8;
+}
+footer ul{
+	font-size: 12px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+/*footer设置*/
