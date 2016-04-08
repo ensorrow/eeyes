@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+	<title>运动会投票</title>	
+	<link href="./stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="http://youzikuwebfont.oss-cn-beijing.aliyuncs.com/api.lib.min.js"></script>
+	<script type="text/javascript" src="js/jquery.danmu.min.js"></script>
+	<script type="text/javascript" src="js/vote.js"></script>
+</head>
+<body>
+	<img src="images/bg.png" id="bg">
+	<header>
+		<img src="images/xiaohui.png">
+	</header>
+	<div id="mainWrapper">		
+		<div id="tpWra">
+			<img src="images/tpbtn.gif">
+			<span>请点击书院名称投票</span>
+		</div>
+		<div id="map">
+			<span id="voteIndicator">+1票</span>
+			<a href="#" class="myfont" id="pk">彭康<br><span>100</span>票</a>
+			<a href="#" id="zy" class="myfont">仲英<br><span>100</span>票</a>
+			<a href="#" id="ny" class="myfont">南洋<br><span>100</span>票</a>
+			<a href="#" id="wz" class="myfont">文治<br><span>100</span>票</a>
+			<a href="#" id="cs" class="myfont">崇实<br><span>100</span>票</a>
+			<a href="#" id="zl" class="myfont">宗濂<br><span>100</span>票</a>
+			<a href="#" id="lz" class="myfont">励志<br><span>100</span>票</a>
+			<a href="#" id="qd" class="myfont">启德<br><span>100</span>票</a>
+			<!-- <img src="images/zhongying.png" id="zy" />
+			<img src="images/nanyang.png" id="ny" />
+			<img src="images/pengkang.png" id="pk" />
+			<img src="images/wenzhi.png" id="wz" />
+			<img src="images/chongshi.png" id="cs" />
+			<img src="images/zonglian.png" id="zl" />
+			<img src="images/lizhi.png" id="lz" />
+			<img src="images/qide.png" id="qd" /> -->
+		</div>
+		<div id="danmu">
+			<h1>我是弹幕君</h1>
+			<section>
+				<div id="danmuWra"></div>
+			</section>
+		</div>
+		<div id="dmSend">
+			<img src="images/dmbtn.gif">
+			<span>
+				<input type="text" id="danmu_text" placeholder="请输入文字">
+				<button>确定</button>
+			</span>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/autoFit.js"></script>
+	<!-- 在线字体调用 -->
+	<script type="text/javascript">
+	   
+	</script>
+</body>
+<script type="text/javascript" src="js/danmu.js"></script>
+</html>

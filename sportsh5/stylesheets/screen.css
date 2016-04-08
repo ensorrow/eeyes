@@ -1,0 +1,242 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+#tpWra span, #dmSend span, #danmu {
+  background: rgba(255, 255, 255, 0.2);
+  color: #92969c;
+  font-size: 0.32rem;
+}
+
+a, img {
+  -webkit-touch-callout: none;
+  /* 禁止长按链接与图片弹出菜单 */
+}
+
+html, body {
+  -webkit-user-select: none;
+  /* 禁止选中文本（如无文本选中需求，此为必选项） */
+  user-select: none;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  body {
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+header {
+  height: 1.17333rem;
+  flex: 1;
+}
+header img {
+  width: 3.22667rem;
+  margin-top: 0.08rem;
+  margin-left: 0.16rem;
+}
+
+#bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+#mainWrapper {
+  flex: 12;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+}
+
+#voteIndicator {
+  color: #fff;
+  text-shadow: 0 0 28px #fff;
+  position: absolute;
+  left: 0.08rem;
+  top: 0.69333rem;
+  font-size: 0.61333rem;
+  opacity: 0;
+}
+
+#tpWra, #dmSend {
+  margin-left: 0.53333rem;
+  margin-right: 0.53333rem;
+  padding-right: 2.53333rem;
+  flex: 1;
+  position: relative;
+}
+#tpWra img, #dmSend img {
+  height: 1.2rem;
+  display: inline-block;
+}
+#tpWra span, #dmSend span {
+  display: inline-block;
+  padding: 0.10667rem;
+  padding-right: 1.8rem;
+  position: absolute;
+  left: 1.6rem;
+  top: 0.26667rem;
+}
+
+#map {
+  flex: 8;
+  position: relative;
+  background: url(../images/earth.png);
+  width: 8.72rem;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -0.90667rem;
+  background-size: 8.72rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#map a {
+  position: absolute;
+  font-size: 0.34667rem;
+  display: block;
+  color: #fff;
+  line-height: 1.48;
+  text-decoration: none;
+  padding: 0.26667rem;
+}
+
+#pk {
+  left: 0.93333rem;
+  top: 2.53333rem;
+}
+
+#zy {
+  left: 2.66667rem;
+  top: 1rem;
+}
+
+#ny {
+  left: 4.4rem;
+  top: 2.4rem;
+}
+
+#lz {
+  left: 5.73333rem;
+  top: 3.46667rem;
+}
+
+#wz {
+  left: 3.94667rem;
+  top: 4.93333rem;
+}
+
+#qd {
+  left: 6.66667rem;
+  top: 6rem;
+}
+
+#zl {
+  left: 5.93333rem;
+  top: 1.6rem;
+}
+
+#cs {
+  left: 2rem;
+  top: 5.86667rem;
+}
+
+#danmu {
+  flex: 2;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  margin-top: 0.32rem;
+  margin-bottom: 0.32rem;
+  padding: 0.32rem 0.36rem;
+}
+#danmu section {
+  height: 100%;
+  flex: 1;
+  position: relative;
+}
+
+#dmSend span {
+  padding-right: 0;
+  top: 0.4rem !important;
+}
+#dmSend input {
+  display: inline-block;
+  background-color: transparent;
+  border: 0;
+  color: #92969c;
+}
+#dmSend button {
+  display: inline-block;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #31c2de;
+  margin: -0.10667rem;
+}
