@@ -74,15 +74,16 @@ html, body {
   -webkit-user-select: none;
   /* 禁止选中文本（如无文本选中需求，此为必选项） */
   user-select: none;
+  height: 100%;
 }
 
 body {
-  height: 100vh;
   position: relative;
   overflow-y: hidden;
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
+  background-color: #666;
 }
 @media screen and (min-width: 768px) {
   body {
